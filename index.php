@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 $client = new Google_Client();
 $client->setApplicationName('Google Sheets API PHP');
 $client->setScopes(Google_Service_Sheets::SPREADSHEETS);
-$client->setAuthConfig('credentials.json');
+$client->setAuthConfig('storage/credentials.json');
 $client->setAccessType('offline');
 $client->setPrompt('select_account consent');
 
